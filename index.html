@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>דף נחיתה - פרויקטים של LANCHI10</title>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #f39c12;
+            --background-color: #f0f4f8;
+            --card-background: #ffffff;
+            --text-color: #333333;
+            --category-color: #2c3e50;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 10px;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .category {
+            margin-bottom: 30px;
+        }
+        .category-title {
+            color: var(--category-color);
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--category-color);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+        .card {
+            background: var(--card-background);
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+        .card:active {
+            transform: scale(0.98);
+        }
+        .card h3 {
+            color: var(--secondary-color);
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+        .card p {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        .card a {
+            display: block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .card a:hover, .card a:active {
+            background-color: var(--secondary-color);
+        }
+        @media (min-width: 600px) {
+            body {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            .category-title {
+                font-size: 1.8rem;
+            }
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .card h3 {
+                font-size: 1.3rem;
+            }
+            .card p {
+                font-size: 1rem;
+            }
+        }
+        @media (min-width: 1024px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>פרויקטים של LANCHI10</h1>
+    
+    <div class="category">
+        <h2 class="category-title">כלים פיננסיים</h2>
+        <div class="container">
+            <div class="card">
+                <h3>מחשבון היוון (חדש)</h3>
+                <p>הגרסה העדכנית ביותר של מחשבון ההיוון.</p>
+                <a href="https://lanchi10.github.io/avi1">פתח מחשבון</a>
+            </div>
+            <div class="card">
+                <h3>מחשבון היוון (ישן)</h3>
+                <p>הגרסה הראשונה של מחשבון ההיוון.</p>
+                <a href="https://lanchi10.github.io/avi">פתח מחשבון</a>
+            </div>
+            <div class="card">
+                <h3>מחשבון היוון נוסף</h3>
+                <p>גרסה נוספת של מחשבון היוון.</p>
+                <a href="https://lanchi10.github.io/calchiv">פתח מחשבון</a>
+            </div>
+            <div class="card">
+                <h3>מחשבון הנחות</h3>
+                <p>כלי מהיר לחישוב הנחות.</p>
+                <a href="https://lanchi10.github.io/calc2">חשב הנחות</a>
+            </div>
+            <div class="card">
+                <h3>מחשבון הנחות (נוסף)</h3>
+                <p>גרסה נוספת של מחשבון ההנחות.</p>
+                <a href="https://lanchi10.github.io/calc">חשב הנחות</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2 class="category-title">מדריכים וכלים טכניים</h2>
+        <div class="container">
+            <div class="card">
+                <h3>מדריך PROMPT במחקר</h3>
+                <p>שימוש ב-PROMPT בתהליכי מחקר.</p>
+                <a href="https://lanchi10.github.io/prm">צפה במדריך</a>
+            </div>
+            <div class="card">
+                <h3>מדריך GitHub</h3>
+                <p>מדריך בסיסי לשימוש ב-GitHub.</p>
+                <a href="https://lanchi10.github.io/gh">למד GitHub</a>
+            </div>
+            <div class="card">
+                <h3>כלי בינה מלאכותית</h3>
+                <p>אוסף כלים ומשאבים ל-AI.</p>
+                <a href="https://lanchi10.github.io/ai">גלה כלים</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2 class="category-title">מידע משפחתי</h2>
+        <div class="container">
+            <div class="card">
+                <h3>משפחת מרים ולנצי</h3>
+                <p>תאריכי לידה של המשפחה.</p>
+                <a href="https://lanchi10.github.io/nayad">צפה בתאריכים</a>
+            </div>
+            <div class="card">
+                <h3>משפחת יהודית ואליסף</h3>
+                <p>ימי הולדת של המשפחה.</p>
+                <a href="https://lanchi10.github.io/safi">צפה בימי הולדת</a>
+            </div>
+            <div class="card">
+                <h3>ילדי אחיקם</h3>
+                <p>ימי הולדת של ילדי אחיקם.</p>
+                <a href="https://lanchi10.github.io/achikam">צפה בימי הולדת</a>
+            </div>
+            <div class="card">
+                <h3>ילדי רלי</h3>
+                <p>ימי הולדת של ילדי רלי.</p>
+                <a href="https://lanchi10.github.io/rali">צפה בימי הולדת</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2 class="category-title">מידע כללי ושימושי</h2>
+        <div class="container">
+            <div class="card">
+                <h3>פרויקט נכס לנדסברג</h3>
+                <p>סיכום מפורט של הפרויקט.</p>
+                <a href="https://lanchi10.github.io/hh">קרא סיכום</a>
+            </div>
+            <div class="card">
+                <h3>דף נחיתה יומיומי</h3>
+                <p>מידע שימושי לשימוש יומיומי.</p>
+                <a href="https://lanchi10.github.io/all">פתח דף נחיתה</a>
+            </div>
+            <div class="card">
+                <h3>חדשות ובידור</h3>
+                <p>חדשות, מוזיקה ופודקאסטים.</p>
+                <a href="https://lanchi10.github.io/news">גלה תוכן</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+Version 4 of 4
+
+
+
